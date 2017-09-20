@@ -51,3 +51,22 @@ ages << 0
 
 #5
 puts "One of my favourite movies was made in #{fav_movies[:drunk_wedding]}."
+
+# E X E R C I S E  2
+
+#1
+print "The last colour on my list is: #{fav_colours[-1]}.\n"
+
+#2
+cities[:portland] = '639,863'
+
+#3
+puts "This is the coin flip results, but backwards: #{coin_flip.reverse!}"
+
+#4
+print "Seouls populations is #{cities[:seoul]}.\n"
+
+#5
+fav_artists.each do |artist|
+  print "I think #{artist} is great.\n"
+end
