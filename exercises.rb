@@ -1,3 +1,5 @@
+
+# E X E R C I S E  0
 # arrays
 
 fav_colours = ["white", "grey", "mustard yellow", "ox blood"]
@@ -32,3 +34,20 @@ names_ages = {
   :chris => 21,
   :sarah_cousin => 28
 }
+
+# E X E R C I S E  1
+
+#1
+print "Here are the results of the coin flips:\n#{coin_flip}"
+
+#2
+print "My first favourite colour is:\n#{fav_colours[0]}."
+
+#3
+puts ages.sort
+
+#4
+ages << 0
+
+#5
+puts "One of my favourite movies was made in #{fav_movies[:drunk_wedding]}."
