@@ -61,7 +61,7 @@ print "The last colour on my list is: #{fav_colours[-1]}.\n"
 cities[:portland] = '639,863'
 
 #3
-puts "This is the coin flip results, but backwards: #{coin_flip.reverse!}"
+puts "This is the coin flip results, but backwards: #{coin_flip.reverse!}."
 
 #4
 print "Seouls populations is #{cities[:seoul]}.\n"
@@ -70,3 +70,20 @@ print "Seouls populations is #{cities[:seoul]}.\n"
 fav_artists.each do |artist|
   print "I think #{artist} is great.\n"
 end
+
+# E X E R C I S E  3
+
+#1
+print "The first two artists on my list are #{fav_artists[0 .. 1]}.\n"
+
+#2
+fav_movies.each do |movie, year|
+  print "#{movie} came out in #{year}.\n"
+end
+
+#3
+print ages.sort.reverse!
+
+#4
+fav_movies[:beauty_and_the_beast] = 1991, 2017
+print fav_movies
