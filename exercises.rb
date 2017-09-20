@@ -3,7 +3,7 @@
 # arrays
 
 fav_colours = ["white", "grey", "mustard yellow", "ox blood"]
-ages = [28, 27, 23, 21, 28]
+ages = [28, 29, 27, 23, 21, 28]
 coin_flip = ["heads", "heads", "tails", "tails", "heads"]
 fav_artists = ["Portugal. the man", "Solange", "noname"]
 col_symbols = [:white, :grey, :mustard_yellow, :ox_blood]
@@ -87,3 +87,22 @@ print ages.sort.reverse!
 #4
 fav_movies[:beauty_and_the_beast] = 1991, 2017
 print fav_movies
+
+# E X E R C I S E  4
+
+#1
+print "These are the ages of people under 25 in my life: #{ages.select { |a| a < 25 }}"
+
+#2
+print "The oldest person in my life is #{ages.max}."
+
+#3
+print "I flipped heads #{coin_flip.count("heads")} times."
+
+#4
+fav_artists.delete("Portugal. the man")
+print fav_artists
+
+#5
+cities[:toronto] = "3.1 million - NEW"
+print cities
