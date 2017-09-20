@@ -22,9 +22,9 @@ fav_movies ={
 }
 
 cities = {
-  :toronto => '2.6 million',
-  :vancouver => "603,500",
-  :seoul => "10.58 million"
+  :toronto => 2600000,
+  :vancouver => 603500,
+  :seoul => 10580000
 }
 
 names_ages = {
@@ -58,7 +58,7 @@ puts "One of my favourite movies was made in #{fav_movies[:drunk_wedding]}."
 print "The last colour on my list is: #{fav_colours[-1]}.\n"
 
 #2
-cities[:portland] = '639,863'
+cities[:portland] = 639863
 
 #3
 puts "This is the coin flip results, but backwards: #{coin_flip.reverse!}."
@@ -104,5 +104,34 @@ fav_artists.delete("Portugal. the man")
 print fav_artists
 
 #5
-cities[:toronto] = "3.1 million - NEW"
+cities[:toronto] = 3100000
 print cities
+
+# E X E R C I S E  5
+
+#1
+total = 0
+cities.each do |city, population|
+  total += population.to_i
+end
+
+print "The total population is #{total}.\n"
+
+#2
+names_ages.each do |name, age|
+    if age < 25
+    print "#{name} is a baby.\n"
+  else
+    print "#{name} is getting up there.\n"
+  end
+end
+
+#3
+print "The last two colours on my list are #{fav_colours.last(2)}."
+
+#4
+print ages.map {|age, plus| age + 1}
+
+#5
+fav_colours.insert(-1, "millenial pink", "forest green")
+print fav_colours
