@@ -135,3 +135,43 @@ print ages.map {|age, plus| age + 1}
 #5
 fav_colours.insert(-1, "millenial pink", "forest green")
 print fav_colours
+
+# E X E R C I S E  6
+
+#1
+the_nine_movies = {
+  1999 => ["The Matrix", "Star Wars: Episode 1", "The Mummy"],
+  2009 => ["Avatar", "Star Trek", "District 9"],
+  2019 => ["How to Train Your Dragon 3", "Toy Story 4", "Star Wars: Episode 9"]
+}
+
+#2
+row_1 = [1, 2, 3]
+row_2 = [4, 5, 6]
+row_3 = [7, 8, 9]
+row_4 = ["*", 0, "#"]
+
+phone = [row_1.join(" "), row_2.join(" "), row_3.join(" "), row_4.join(" ")]
+
+print phone
+
+#3
+country_info = [
+country_one = {
+  :name => "Canada",
+  :continent => "North America",
+  :island => false
+},
+
+country_two = {
+  :name => "Israel",
+  :continent => "Asia",
+  :island => false
+},
+
+country_three = {
+  :name => "England",
+  :continent => "Europe",
+  :island => true
+}
+]
