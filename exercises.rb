@@ -175,3 +175,37 @@ country_three = {
   :island => true
 }
 ]
+
+# E X E R C I S E  7
+
+#1
+20.times do
+  puts "I will not skateboard in the halls.\n"
+end
+
+#2
+skateboard = ["I will not skateboard in the halls."]
+
+20.times do
+  puts "#{skateboard}"
+end
+
+#3
+increasing_numbers = Array (1..50).to_a
+
+#4
+increasing_total = 0
+
+increasing_numbers.each do |e|
+  increasing_total += e.to_i
+end
+
+print "The total is #{increasing_total}."
+
+#5
+print increasing_numbers.flat_map { |e| [e, e, e] }
+
+#6
+no_island = country_info.select { |island| island[:island] == false}
+print "\nThese countries are not on islands: #{no_island}.\n"
+print "This was the original list of countries: #{country_info}."
