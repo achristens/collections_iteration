@@ -110,6 +110,9 @@ print cities
 # E X E R C I S E  5
 
 #1
+#ALTERNATIVE SOLUTION:
+#cities.map { |city, population| population  }.sum
+
 total = 0
 cities.each do |city, population|
   total += population.to_i
@@ -176,7 +179,7 @@ country_three = {
 }
 ]
 
-# E X E R C I S E  7
+# E X E R C I S E  6b
 
 #1
 20.times do
@@ -194,6 +197,7 @@ end
 increasing_numbers = Array (1..50).to_a
 
 #4
+#ALTERNATIVE, EQUAL SOLUTION: increasing_numbers.reduce(:+)
 increasing_total = 0
 
 increasing_numbers.each do |e|
@@ -210,13 +214,48 @@ no_island = country_info.select { |island| island[:island] == false}
 print "\nThese countries are not on islands: #{no_island}.\n"
 print "This was the original list of countries: #{country_info}."
 
-# E X E R C I S E  8
+# E X E R C I S E  7
+
 my_expenses = [250, 7.95, 30.95, 16.50]
+my_expenses2 = [23, 83, 198, 129.87]
 
-expenses_total = 0
+def calculate(expenses)
+  expenses_total = 0
 
-my_expenses.each do |expense|
-  expenses_total += expense.to_f
+  expenses.each do |expense|
+    expenses_total += expense.to_f
+  end
+
+  print "Your total expenses for the year was $#{expenses_total}."
 end
 
-print "Your total expenses for the year was $#{expenses_total}."
+calculate(my_expenses)
+calculate(my_expenses2)
+
+# E X E R C I S E  8
+grocery_list = ["carrot", "toilet paper", "apples", "salmon"]
+
+def final_list(list)
+  list.sort!
+  list.each do |item, x|
+    print x, "* " + item + "\n"
+  end
+end
+
+grocery_list << "rice"
+
+final_list(grocery_list)
+
+puts "You have #{grocery_list.count} items on your list"
+
+if grocery_list.include?("bananas")
+  puts "You need to pick up bananas"
+else
+  puts "You don't need to pick up bananas today."
+end
+
+puts "The second item on your list is #{grocery_list[1]}."
+
+grocery_list.delete("salmon")
+
+final_list(grocery_list)
