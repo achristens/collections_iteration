@@ -209,3 +209,14 @@ print increasing_numbers.flat_map { |e| [e, e, e] }
 no_island = country_info.select { |island| island[:island] == false}
 print "\nThese countries are not on islands: #{no_island}.\n"
 print "This was the original list of countries: #{country_info}."
+
+# E X E R C I S E  8
+my_expenses = [250, 7.95, 30.95, 16.50]
+
+expenses_total = 0
+
+my_expenses.each do |expense|
+  expenses_total += expense.to_f
+end
+
+print "Your total expenses for the year was $#{expenses_total}."
